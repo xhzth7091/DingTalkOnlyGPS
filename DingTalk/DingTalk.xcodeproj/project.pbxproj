@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE0A775E2294F8C000CB0E54 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE0A775D2294F8C000CB0E54 /* MDConfig.plist */; };
+		EE0A77682294F8C000CB0E54 /* libDingTalkDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE0A77672294F8C000CB0E54 /* libDingTalkDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		EE0A776D2294F8C000CB0E54 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0A776C2294F8C000CB0E54 /* JavaScriptCore.framework */; };
+		EE0A776F2294F8C000CB0E54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0A776E2294F8C000CB0E54 /* Foundation.framework */; };
+		EE0A77712294F8C000CB0E54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0A77702294F8C000CB0E54 /* UIKit.framework */; };
+		EE0A77762294F8C000CB0E54 /* DingTalkDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77752294F8C000CB0E54 /* DingTalkDylib.mm */; };
+		EE0A77792294F8C000CB0E54 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0A77782294F8C000CB0E54 /* MDConfigManager.h */; };
+		EE0A777B2294F8C000CB0E54 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0A777A2294F8C000CB0E54 /* MDConfigManager.m */; };
+		EE0A777D2294F8C000CB0E54 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0A777C2294F8C000CB0E54 /* MDCycriptManager.h */; };
+		EE0A777F2294F8C000CB0E54 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0A777E2294F8C000CB0E54 /* MDCycriptManager.m */; };
+		EE0A77812294F8C000CB0E54 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0A77802294F8C000CB0E54 /* MDMethodTrace.h */; };
+		EE0A77832294F8C000CB0E54 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77822294F8C000CB0E54 /* MDMethodTrace.m */; };
+		EE0A77862294F8C000CB0E54 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77852294F8C000CB0E54 /* a1a2-selectortramps-arm.s */; };
+		EE0A77882294F8C000CB0E54 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77872294F8C000CB0E54 /* a1a2-selectortramps-arm64.s */; };
+		EE0A778A2294F8C000CB0E54 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77892294F8C000CB0E54 /* a1a2-selectortramps-i386.s */; };
+		EE0A778C2294F8C000CB0E54 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = EE0A778B2294F8C000CB0E54 /* a1a2-selectortramps-x86_64.s */; };
+		EE0A778E2294F8C000CB0E54 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = EE0A778D2294F8C000CB0E54 /* a2a3-selectortramps-arm.s */; };
+		EE0A77902294F8C000CB0E54 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = EE0A778F2294F8C000CB0E54 /* a2a3-selectortramps-i386.s */; };
+		EE0A77922294F8C000CB0E54 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77912294F8C000CB0E54 /* a2a3-selectortramps-x86_64.s */; };
+		EE0A77942294F8C000CB0E54 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0A77932294F8C000CB0E54 /* OCMethodTrace.h */; };
+		EE0A77962294F8C000CB0E54 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77952294F8C000CB0E54 /* OCMethodTrace.m */; };
+		EE0A77982294F8C000CB0E54 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0A77972294F8C000CB0E54 /* OCSelectorTrampolines.h */; };
+		EE0A779A2294F8C000CB0E54 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77992294F8C000CB0E54 /* OCSelectorTrampolines.mm */; };
+		EE0A779E2294F8C000CB0E54 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0A779D2294F8C000CB0E54 /* LLDBTools.h */; };
+		EE0A77A02294F8C000CB0E54 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE0A779F2294F8C000CB0E54 /* LLDBTools.mm */; };
+		EE0A77A52294F8C000CB0E54 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77A42294F8C000CB0E54 /* AntiAntiDebug.m */; };
+		EE0A77A82294F8C000CB0E54 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77A72294F8C000CB0E54 /* fishhook.c */; };
+		EE0A77AA2294F8C000CB0E54 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0A77A92294F8C000CB0E54 /* fishhook.h */; };
+		EE0A77AC2294F8C000CB0E54 /* DingTalkDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0A77AB2294F8C000CB0E54 /* DingTalkDylib.h */; };
+		EE0A77AE2294F8C000CB0E54 /* DingTalkDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0A77AD2294F8C000CB0E54 /* DingTalkDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE0A77692294F8C000CB0E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE0A774B2294F8C000CB0E54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE0A77662294F8C000CB0E54;
+			remoteInfo = DingTalkDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE0A77532294F8C000CB0E54 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EE0A77682294F8C000CB0E54 /* libDingTalkDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE0A77562294F8C000CB0E54 /* DingTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0A77592294F8C000CB0E54 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		EE0A775B2294F8C000CB0E54 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		EE0A775D2294F8C000CB0E54 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		EE0A77602294F8C000CB0E54 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		EE0A77612294F8C000CB0E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0A77672294F8C000CB0E54 /* libDingTalkDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDingTalkDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0A776C2294F8C000CB0E54 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE0A776E2294F8C000CB0E54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE0A77702294F8C000CB0E54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EE0A77742294F8C000CB0E54 /* DingTalkDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = DingTalkDylib.xm; path = Logos/DingTalkDylib.xm; sourceTree = "<group>"; };
+		EE0A77752294F8C000CB0E54 /* DingTalkDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = DingTalkDylib.mm; path = Logos/DingTalkDylib.mm; sourceTree = "<group>"; };
+		EE0A77782294F8C000CB0E54 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		EE0A777A2294F8C000CB0E54 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		EE0A777C2294F8C000CB0E54 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		EE0A777E2294F8C000CB0E54 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		EE0A77802294F8C000CB0E54 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		EE0A77822294F8C000CB0E54 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		EE0A77852294F8C000CB0E54 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		EE0A77872294F8C000CB0E54 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		EE0A77892294F8C000CB0E54 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		EE0A778B2294F8C000CB0E54 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		EE0A778D2294F8C000CB0E54 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		EE0A778F2294F8C000CB0E54 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		EE0A77912294F8C000CB0E54 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		EE0A77932294F8C000CB0E54 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		EE0A77952294F8C000CB0E54 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		EE0A77972294F8C000CB0E54 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		EE0A77992294F8C000CB0E54 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		EE0A779B2294F8C000CB0E54 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		EE0A779D2294F8C000CB0E54 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		EE0A779F2294F8C000CB0E54 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		EE0A77A22294F8C000CB0E54 /* DingTalkDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DingTalkDylib-Prefix.pch"; sourceTree = "<group>"; };
+		EE0A77A42294F8C000CB0E54 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		EE0A77A72294F8C000CB0E54 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		EE0A77A92294F8C000CB0E54 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		EE0A77AB2294F8C000CB0E54 /* DingTalkDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingTalkDylib.h; sourceTree = "<group>"; };
+		EE0A77AD2294F8C000CB0E54 /* DingTalkDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingTalkDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE0A77502294F8C000CB0E54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0A77642294F8C000CB0E54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0A776D2294F8C000CB0E54 /* JavaScriptCore.framework in Frameworks */,
+				EE0A77712294F8C000CB0E54 /* UIKit.framework in Frameworks */,
+				EE0A776F2294F8C000CB0E54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE0A774A2294F8C000CB0E54 = {
+			isa = PBXGroup;
+			children = (
+				EE0A77582294F8C000CB0E54 /* DingTalk */,
+				EE0A77722294F8C000CB0E54 /* DingTalkDylib */,
+				EE0A776B2294F8C000CB0E54 /* Frameworks */,
+				EE0A77572294F8C000CB0E54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE0A77572294F8C000CB0E54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A77562294F8C000CB0E54 /* DingTalk.app */,
+				EE0A77672294F8C000CB0E54 /* libDingTalkDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE0A77582294F8C000CB0E54 /* DingTalk */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A77592294F8C000CB0E54 /* icon.png */,
+				EE0A77612294F8C000CB0E54 /* Info.plist */,
+				EE0A775A2294F8C000CB0E54 /* Scripts */,
+				EE0A775C2294F8C000CB0E54 /* Config */,
+				EE0A775F2294F8C000CB0E54 /* TargetApp */,
+			);
+			path = DingTalk;
+			sourceTree = "<group>";
+		};
+		EE0A775A2294F8C000CB0E54 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A775B2294F8C000CB0E54 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		EE0A775C2294F8C000CB0E54 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A775D2294F8C000CB0E54 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		EE0A775F2294F8C000CB0E54 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A77602294F8C000CB0E54 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		EE0A776B2294F8C000CB0E54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A776C2294F8C000CB0E54 /* JavaScriptCore.framework */,
+				EE0A776E2294F8C000CB0E54 /* Foundation.framework */,
+				EE0A77702294F8C000CB0E54 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE0A77722294F8C000CB0E54 /* DingTalkDylib */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A77AB2294F8C000CB0E54 /* DingTalkDylib.h */,
+				EE0A77AD2294F8C000CB0E54 /* DingTalkDylib.m */,
+				EE0A77732294F8C000CB0E54 /* Logos */,
+				EE0A77772294F8C000CB0E54 /* Config */,
+				EE0A77842294F8C000CB0E54 /* Trace */,
+				EE0A779C2294F8C000CB0E54 /* Tools */,
+				EE0A77A32294F8C000CB0E54 /* AntiAntiDebug */,
+				EE0A77A62294F8C000CB0E54 /* fishhook */,
+				EE0A77A12294F8C000CB0E54 /* Supporting Files */,
+			);
+			path = DingTalkDylib;
+			sourceTree = "<group>";
+		};
+		EE0A77732294F8C000CB0E54 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A77742294F8C000CB0E54 /* DingTalkDylib.xm */,
+				EE0A77752294F8C000CB0E54 /* DingTalkDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		EE0A77772294F8C000CB0E54 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A77782294F8C000CB0E54 /* MDConfigManager.h */,
+				EE0A777A2294F8C000CB0E54 /* MDConfigManager.m */,
+				EE0A777C2294F8C000CB0E54 /* MDCycriptManager.h */,
+				EE0A777E2294F8C000CB0E54 /* MDCycriptManager.m */,
+				EE0A77802294F8C000CB0E54 /* MDMethodTrace.h */,
+				EE0A77822294F8C000CB0E54 /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		EE0A77842294F8C000CB0E54 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A77852294F8C000CB0E54 /* a1a2-selectortramps-arm.s */,
+				EE0A77872294F8C000CB0E54 /* a1a2-selectortramps-arm64.s */,
+				EE0A77892294F8C000CB0E54 /* a1a2-selectortramps-i386.s */,
+				EE0A778B2294F8C000CB0E54 /* a1a2-selectortramps-x86_64.s */,
+				EE0A778D2294F8C000CB0E54 /* a2a3-selectortramps-arm.s */,
+				EE0A778F2294F8C000CB0E54 /* a2a3-selectortramps-i386.s */,
+				EE0A77912294F8C000CB0E54 /* a2a3-selectortramps-x86_64.s */,
+				EE0A77932294F8C000CB0E54 /* OCMethodTrace.h */,
+				EE0A77952294F8C000CB0E54 /* OCMethodTrace.m */,
+				EE0A77972294F8C000CB0E54 /* OCSelectorTrampolines.h */,
+				EE0A77992294F8C000CB0E54 /* OCSelectorTrampolines.mm */,
+				EE0A779B2294F8C000CB0E54 /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		EE0A779C2294F8C000CB0E54 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A779D2294F8C000CB0E54 /* LLDBTools.h */,
+				EE0A779F2294F8C000CB0E54 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		EE0A77A12294F8C000CB0E54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A77A22294F8C000CB0E54 /* DingTalkDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE0A77A32294F8C000CB0E54 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A77A42294F8C000CB0E54 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		EE0A77A62294F8C000CB0E54 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				EE0A77A72294F8C000CB0E54 /* fishhook.c */,
+				EE0A77A92294F8C000CB0E54 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EE0A77652294F8C000CB0E54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0A777D2294F8C000CB0E54 /* MDCycriptManager.h in Headers */,
+				EE0A77812294F8C000CB0E54 /* MDMethodTrace.h in Headers */,
+				EE0A77AA2294F8C000CB0E54 /* fishhook.h in Headers */,
+				EE0A779E2294F8C000CB0E54 /* LLDBTools.h in Headers */,
+				EE0A77792294F8C000CB0E54 /* MDConfigManager.h in Headers */,
+				EE0A77982294F8C000CB0E54 /* OCSelectorTrampolines.h in Headers */,
+				EE0A77942294F8C000CB0E54 /* OCMethodTrace.h in Headers */,
+				EE0A77AC2294F8C000CB0E54 /* DingTalkDylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EE0A77552294F8C000CB0E54 /* DingTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0A77B42294F8C000CB0E54 /* Build configuration list for PBXNativeTarget "DingTalk" */;
+			buildPhases = (
+				EE0A774F2294F8C000CB0E54 /* Sources */,
+				EE0A77502294F8C000CB0E54 /* Frameworks */,
+				EE0A77512294F8C000CB0E54 /* ShellScript */,
+				EE0A77522294F8C000CB0E54 /* Resources */,
+				EE0A77532294F8C000CB0E54 /* CopyFiles */,
+				EE0A77542294F8C000CB0E54 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE0A776A2294F8C000CB0E54 /* PBXTargetDependency */,
+			);
+			name = DingTalk;
+			productName = DingTalk;
+			productReference = EE0A77562294F8C000CB0E54 /* DingTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE0A77662294F8C000CB0E54 /* DingTalkDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0A77B12294F8C000CB0E54 /* Build configuration list for PBXNativeTarget "DingTalkDylib" */;
+			buildPhases = (
+				EE0A77622294F8C000CB0E54 /* ShellScript */,
+				EE0A77632294F8C000CB0E54 /* Sources */,
+				EE0A77642294F8C000CB0E54 /* Frameworks */,
+				EE0A77652294F8C000CB0E54 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DingTalkDylib;
+			productName = DingTalkDylib;
+			productReference = EE0A77672294F8C000CB0E54 /* libDingTalkDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE0A774B2294F8C000CB0E54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "tf-swufe";
+				TargetAttributes = {
+					EE0A77552294F8C000CB0E54 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EE0A77662294F8C000CB0E54 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = EE0A774E2294F8C000CB0E54 /* Build configuration list for PBXProject "DingTalk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE0A774A2294F8C000CB0E54;
+			productRefGroup = EE0A77572294F8C000CB0E54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE0A77552294F8C000CB0E54 /* DingTalk */,
+				EE0A77662294F8C000CB0E54 /* DingTalkDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE0A77522294F8C000CB0E54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0A775E2294F8C000CB0E54 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE0A77512294F8C000CB0E54 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		EE0A77542294F8C000CB0E54 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		EE0A77622294F8C000CB0E54 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE0A774F2294F8C000CB0E54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0A77632294F8C000CB0E54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0A77AE2294F8C000CB0E54 /* DingTalkDylib.m in Sources */,
+				EE0A777F2294F8C000CB0E54 /* MDCycriptManager.m in Sources */,
+				EE0A77882294F8C000CB0E54 /* a1a2-selectortramps-arm64.s in Sources */,
+				EE0A77862294F8C000CB0E54 /* a1a2-selectortramps-arm.s in Sources */,
+				EE0A778C2294F8C000CB0E54 /* a1a2-selectortramps-x86_64.s in Sources */,
+				EE0A77962294F8C000CB0E54 /* OCMethodTrace.m in Sources */,
+				EE0A777B2294F8C000CB0E54 /* MDConfigManager.m in Sources */,
+				EE0A77A82294F8C000CB0E54 /* fishhook.c in Sources */,
+				EE0A77A52294F8C000CB0E54 /* AntiAntiDebug.m in Sources */,
+				EE0A779A2294F8C000CB0E54 /* OCSelectorTrampolines.mm in Sources */,
+				EE0A778A2294F8C000CB0E54 /* a1a2-selectortramps-i386.s in Sources */,
+				EE0A77902294F8C000CB0E54 /* a2a3-selectortramps-i386.s in Sources */,
+				EE0A778E2294F8C000CB0E54 /* a2a3-selectortramps-arm.s in Sources */,
+				EE0A77762294F8C000CB0E54 /* DingTalkDylib.mm in Sources */,
+				EE0A77A02294F8C000CB0E54 /* LLDBTools.mm in Sources */,
+				EE0A77922294F8C000CB0E54 /* a2a3-selectortramps-x86_64.s in Sources */,
+				EE0A77832294F8C000CB0E54 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE0A776A2294F8C000CB0E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE0A77662294F8C000CB0E54 /* DingTalkDylib */;
+			targetProxy = EE0A77692294F8C000CB0E54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE0A77AF2294F8C000CB0E54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE0A77B02294F8C000CB0E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE0A77B22294F8C000CB0E54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XT86955LL4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingTalkDylib/DingTalkDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libDingTalkDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"DingTalkDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		EE0A77B32294F8C000CB0E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = XT86955LL4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingTalkDylib/DingTalkDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libDingTalkDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"DingTalkDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE0A77B52294F8C000CB0E54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XT86955LL4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DingTalk/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE0A77B62294F8C000CB0E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XT86955LL4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DingTalk/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE0A774E2294F8C000CB0E54 /* Build configuration list for PBXProject "DingTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0A77AF2294F8C000CB0E54 /* Debug */,
+				EE0A77B02294F8C000CB0E54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0A77B12294F8C000CB0E54 /* Build configuration list for PBXNativeTarget "DingTalkDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0A77B22294F8C000CB0E54 /* Debug */,
+				EE0A77B32294F8C000CB0E54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0A77B42294F8C000CB0E54 /* Build configuration list for PBXNativeTarget "DingTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0A77B52294F8C000CB0E54 /* Debug */,
+				EE0A77B62294F8C000CB0E54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE0A774B2294F8C000CB0E54 /* Project object */;
+}
